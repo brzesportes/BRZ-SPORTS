@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Brz Sports</title>
+
+  <!-- Fonte profissional do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    /* ===== CAPA ANIMADA ===== */
+    .capa {
+      width: 100%;
+      height: 350px;
+      background-color: #000000; /* fundo preto */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    /* Título animado letra por letra */
+    .capa h1 {
+      color: #d10000; /* vermelho */
+      font-size: 50px;
+      letter-spacing: 2px;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #d10000;
+      width: 0;
+      animation: typing 2s steps(10) forwards, blink 0.5s step-end infinite alternate;
+    }
+
+    @keyframes typing {
+      to { width: 10ch; } /* número de caracteres de "BRZ SPORTS" */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* Subtítulo */
+    .capa p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s forwards;
+      animation-delay: 2.2s; /* aparece após o título */
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 5px solid #d10000;
+    }
+
+    header h1 {
+      color: #d10000;
+      font-size: 40px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: #f5f5f5;
+      margin-bottom: 25px;
+      padding: 20px;
+      border-left: 6px solid #d10000;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #d10000;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .destaque-breve {
+      background-color: #000000;
+      color: #ffffff;
+      border-left: 6px solid #d10000;
+    }
+
+    .destaque-breve h2 {
+      color: #d10000;
+    }
+
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CAPA ANIMADA -->
+  <section class="capa">
+    <h1>BRZ SPORTS</h1>
+    <p>Sua paixão pelo esporte começa aqui!</p>
+  </section>
+
+
+  <main>
+
+    <section>
+      <h2>Bio</h2>
+      <p>
+        Brz Sports é um portal dedicado a quem vive e respira esporte. Aqui você encontra as principais notícias,
+        análises, resultados e curiosidades do mundo esportivo, com informações rápidas, confiáveis e atualizadas.
+        Do futebol aos esportes internacionais, nosso objetivo é manter você sempre bem informado sobre tudo o que
+        acontece dentro e fora dos campos.
+      </p>
+    </section>
+
+    <section>
+      <h2>Informações</h2>
+      <p>
+        A Brz Sports é um portal criado por uma jovem fanática por esportes, movida pelo desejo de compartilhar
+        conhecimento, curiosidades e novidades com todos que, assim como ela, enxergam o esporte como parte da vida.
+        A ideia nasceu da vontade de aproximar o público do universo esportivo, oferecendo conteúdos atualizados,
+        acessíveis e feitos com paixão.
+      </p>
+    </section>
+
+    <section>
+      <h2>Destaques</h2>
+      <ul>
+        <li>Grandes jogos</li>
+        <li>Títulos históricos</li>
+        <li>Recordes mundiais</li>
+        <li>Craques do passado</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Modalidades</h2>
+      <ul>
+        <li>Futebol</li>
+        <li>Basquete</li>
+        <li>Vôlei</li>
+        <li>Fórmula 1</li>
+        <li>Skate</li>
+      </ul>
+    </section>
+
+    <section class="destaque-breve">
+      <h2>Em breve na Brz Sports</h2>
+      <p>
+        Em breve, a Brz Sports contará com matérias esportivas completas, análises exclusivas, coberturas especiais,
+        e  conteúdos ainda mais dinâmicos para deixar você por dentro de tudo que acontece no mundo do esporte.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Brz Sports | Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
